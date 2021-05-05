@@ -230,4 +230,58 @@ main h1 {
 
 .img-destaque {
     animation: flutuar 3s infinite;
+    width: 500px;
+    max-width: 100%;
+}
+
+@media (max-width: 900px) {
+    section.banner .container,
+    section.introducao-sobre .container .intro,
+    .container .contato1 {
+        flex-wrap: wrap; /*quebrar linha do flexbox dependendo do dispositivo de onde ele está sendo acessado*/
+        margin: 10px;
+    }
+
+    section.desenvolvimento .container,
+    section.marketing .container, 
+    section.consultoria-ux .container{
+        flex-wrap: wrap;
+    }
+
+
+    section.introducao-sobre,
+    section.orcamento .container .contato{
+        padding: 0 40px;
+    }
+
+    section.video-sobre iframe,
+    section.contato iframe{
+        height: 400px;
+        padding: 40px;
+    }
+
+    section.banner .container .texto,
+    section.desenvolvimento .container .texto,
+    section.marketing .container .texto, 
+    section.consultoria-ux .container .texto,
+    main h1 {
+        text-align: center;
+    }
+
+    section.banner {
+        padding: 0 40px 40px;
+    }
+
+}
+
+@media (max-width: 515px) {
+    header .container{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    header nav ul {
+        padding: 0;
+        margin: 0;
+    }
 }
